@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Offcourt®</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+<div class="topbar">Good pairs. Zero shipping fees over $150.</div>
+
+<header class="header">
+  <a class="header__logo" href="../index.html">OFFCOURT®</a>
+  <nav class="header__menu" id="menu" aria-label="Main">
+    <a class="header__link" href="new-arrivals.html">New arrivals</a>
+    <a class="header__link" href="new-arrivals.html?g=men">Men</a>
+    <a class="header__link" href="new-arrivals.html?g=women">Women</a>
+    <a class="header__link" href="brands.html">Brands</a>
+    <a class="header__link" href="edit.html">The edit</a>
+    <a class="header__link" href="about.html">About</a>
+  </nav>
+  <div class="header__actions">
+    <button class="header__btn" id="search-toggle" aria-label="Search" aria-expanded="false">⌕</button>
+    <a class="header__btn" href="contact.html" aria-label="Help and contact">☺</a>
+    <a class="header__btn" href="cart.html" aria-label="Cart">▢ <span class="header__count" id="cart-count">0</span></a>
+    <button class="header__btn header__btn--burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+  <form class="search" id="search" role="search" hidden>
+    <input class="search__input" id="search-input" type="search" placeholder="Search sneakers or brands" aria-label="Search sneakers or brands">
+    <button class="search__submit" aria-label="Search">→</button>
+  </form>
+</header>
+
+<main>
+  <section class="page-hero">
+    <p class="page-hero__kicker">Need a hand?</p>
+    <h1 class="page-hero__title">Talk to<br>us.</h1>
+    <p class="page-hero__lead">Questions about a pair, an order or a return? We answer fast and we’re real people.</p>
+  </section>
+  <section class="contact">
+    <form class="form" id="contact-form" novalidate>
+      <div class="field"><label class="field__label" for="name">Name</label><input class="field__control" id="name" name="name" autocomplete="name"><small class="field__error" id="name-error"></small></div>
+      <div class="field"><label class="field__label" for="c-email">Email</label><input class="field__control" id="c-email" name="email" type="email" autocomplete="email"><small class="field__error" id="email-error"></small></div>
+      <div class="field"><label class="field__label" for="topic">Topic</label>
+        <select class="field__control" id="topic" name="topic"><option value="">Choose one</option><option>Order status</option><option>Returns &amp; exchanges</option><option>Sizing help</option><option>Something else</option></select>
+        <small class="field__error" id="topic-error"></small></div>
+      <div class="field"><label class="field__label" for="message">Message</label><textarea class="field__control" id="message" name="message"></textarea><small class="field__error" id="message-error"></small></div>
+      <button class="btn btn--dark form__submit">Send message</button>
+      <p class="form__msg" id="form-msg" role="status"></p>
+    </form>
+    <aside class="info">
+      <h2 class="info__title">Good pairs. Great energy.</h2>
+      <div class="info__item"><small>Email</small><a href="mailto:hello@offcourt.store">hello@offcourt.store</a></div>
+      <div class="info__item"><small>Hours</small><p>Mon–Fri, 9am–6pm ET</p></div>
+      <div class="info__item"><small>Instagram</small><a href="https://www.instagram.com/" target="_blank" rel="noopener">@offcourt.store ↗</a></div>
+    </aside>
+  </section>
+
+  <section class="faq" id="faq">
+    <div class="section-head">
+      <div>
+        <small class="section-head__label">Shipping &amp; returns</small>
+        <h2 class="section-head__title">FAQs.</h2>
+      </div>
+    </div>
+    <div class="faq__list">
+      <details class="faq__item"><summary class="faq__q">How long does shipping take?</summary><p class="faq__a">Orders ship within 1–2 business days. Standard delivery takes 3–5 business days. Orders $150+ ship free; otherwise shipping is $8.</p></details>
+      <details class="faq__item"><summary class="faq__q">What is your return policy?</summary><p class="faq__a">Easy returns within 30 days, as long as the pair is unworn and in the original box. Start a return from the contact form below.</p></details>
+      <details class="faq__item"><summary class="faq__q">Are all pairs authentic?</summary><p class="faq__a">Always. Every pair is sourced direct and checked before it leaves us. 100% authentic, guaranteed.</p></details>
+      <details class="faq__item"><summary class="faq__q">How do I find my size?</summary><p class="faq__a">Use the size guide on this page. If you’re between sizes, we recommend going up half a size for running pairs.</p></details>
+      <details class="faq__item"><summary class="faq__q">Where is my order?</summary><p class="faq__a">You’ll get a tracking link by email as soon as your order ships. Can’t find it? Write to us and we’ll sort it.</p></details>
+    </div>
+  </section>
+
+  <section class="size" id="size">
+    <div class="section-head">
+      <div>
+        <small class="section-head__label">Find your fit</small>
+        <h2 class="section-head__title">Size guide.</h2>
+      </div>
+    </div>
+    <div class="size__wrap">
+      <table class="size__table" id="size-table">
+        <thead><tr><th>US</th><th>EU</th><th>UK</th><th>CM</th></tr></thead>
+        <tbody>
+        <tr><td>7</td><td>40</td><td>6</td><td>25</td></tr>
+        <tr><td>8</td><td>41</td><td>7</td><td>26</td></tr>
+        <tr><td>9</td><td>42.5</td><td>8</td><td>27</td></tr>
+        <tr><td>10</td><td>44</td><td>9</td><td>28</td></tr>
+        <tr><td>11</td><td>45</td><td>10</td><td>29</td></tr>
+        <tr><td>12</td><td>46.5</td><td>11</td><td>30</td></tr>
+        <tr><td>13</td><td>47.5</td><td>12</td><td>31</td></tr>
+        </tbody>
+      </table>
+      <div class="converter">
+        <label class="field__label" for="size-us">Convert your size (men’s, approximate)</label>
+        <select class="field__control" id="size-us"></select>
+        <p class="converter__result" id="size-result" role="status"></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="footer__cols">
+    <div class="footer__col footer__col--about">
+      <h5 class="footer__heading">Good pairs. Great energy.</h5>
+      <p class="footer__text">An independent home for sneaker culture. Based everywhere you go.</p>
+      <a class="footer__link footer__link--accent" href="https://www.instagram.com/" target="_blank" rel="noopener">@offcourt.store ↗</a>
+    </div>
+    <div class="footer__col">
+      <small class="footer__label">The rotation</small>
+      <a class="footer__link" href="new-arrivals.html">New arrivals</a><a class="footer__link" href="new-arrivals.html?g=men">Men’s sneakers</a><a class="footer__link" href="new-arrivals.html?g=women">Women’s sneakers</a><a class="footer__link" href="brands.html">All brands</a>
+    </div>
+    <div class="footer__col">
+      <small class="footer__label">Need a hand?</small>
+      <a class="footer__link" href="contact.html#contact-form">Contact us</a><a class="footer__link" href="contact.html#faq">Shipping &amp; returns</a><a class="footer__link" href="contact.html#size">Size guide</a><a class="footer__link" href="contact.html#faq">FAQs</a>
+    </div>
+    <div class="footer__col">
+      <small class="footer__label">Off the court</small>
+      <a class="footer__link" href="about.html">Our story</a><a class="footer__link" href="edit.html">The edit</a><a class="footer__link" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ↗</a><a class="footer__link" href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok ↗</a>
+    </div>
+  </div>
+  <div class="footer__mega">OFFCOURT®</div>
+  <div class="footer__legal"><span>© 2026 Offcourt. All rights reserved.</span><span>Privacy policy / Terms of service</span><span>US / USD $ ↓</span></div>
+</footer>
+<script src="../js/contact.js"></script>
+</body>
+</html>
