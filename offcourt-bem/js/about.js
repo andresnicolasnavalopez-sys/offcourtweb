@@ -3,7 +3,7 @@ const Store = {
   get(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); } catch (e) { return d; } },
   set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
 };
-//java revisado
+
 const Cart = {
   items() { return Store.get('oc_cart', []); },
   save(list) { Store.set('oc_cart', list); Cart.badge(); },

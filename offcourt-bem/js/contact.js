@@ -160,10 +160,10 @@ const sel = document.getElementById('size-us');
 const out = document.getElementById('size-result');
 rows.forEach(r => sel.add(new Option('US ' + r.cells[0].textContent, r.cells[0].textContent)));
 function convert() {
-  rows.forEach(r => r.classList.remove('is-selected'));
+  rows.forEach(r => r.classList.remove('size__row--selected'));
   const r = rows.find(x => x.cells[0].textContent === sel.value);
   if (!r) { out.textContent = 'Elige una talla US.'; return; }
-  r.classList.add('is-selected');
+  r.classList.add('size__row--selected');
   out.textContent = 'EU ' + r.cells[1].textContent + ' · UK ' + r.cells[2].textContent + ' · ' + r.cells[3].textContent + ' cm';
 }
 sel.addEventListener('change', convert);
