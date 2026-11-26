@@ -1,0 +1,16 @@
+/* ===== topbar ===== */
+.topbar{background:var(--ink);color:#fff;text-align:center;font-size:.68rem;padding:7px;letter-spacing:.05em}
+
+/* ===== header + search ===== */
+.header{display:flex;align-items:center;justify-content:space-between;padding:18px var(--pad);position:sticky;top:0;background:var(--cream);z-index:20}
+.header__logo{font-weight:900;letter-spacing:-.03em;font-size:1.1rem}
+.header__menu{display:flex;gap:28px;font-size:.78rem;font-weight:500}
+.header__link[aria-current="page"]{border-bottom:2px solid var(--ink)}
+.header__actions{display:flex;gap:14px;align-items:center}
+.header__btn{font-size:1rem;display:inline-block}
+.header__btn--burger{display:none}
+.header__count{font-size:.7rem;font-weight:700}
+.search{position:absolute;top:100%;left:0;right:0;display:flex;gap:10px;padding:12px var(--pad);background:var(--cream);border-bottom:1px solid var(--line)}
+.search[hidden]{display:none}
+.search__input{flex:1;font:inherit;font-size:.85rem;background:none;border:0;border-bottom:1px solid var(--ink);padding:8px 0;outline:0}
+.search__submit{background:var(--ink);color:#fff;width:34px;height:34px}

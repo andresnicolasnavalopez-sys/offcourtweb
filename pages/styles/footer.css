@@ -1,0 +1,11 @@
+/* ===== footer ===== */
+.footer{background:var(--ink);color:#fff;padding-block:36px 18px}
+.footer__cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:24px;font-size:.75rem}
+.footer__col--about{max-width:none}
+.footer__label{color:#888;margin-bottom:10px}
+.footer__link{display:block;margin-bottom:6px}
+.footer__link--accent{color:var(--lime)}
+.footer__heading{font-size:1rem;font-weight:500;margin-bottom:8px}
+.footer__text{color:#aaa;max-width:26ch;margin-bottom:12px}
+.footer__mega{font-weight:900;letter-spacing:-.06em;font-size:clamp(3rem,16.5vw,15rem);line-height:1;margin:34px 0 20px;white-space:nowrap}
+.footer__legal{display:flex;justify-content:space-between;font-size:.6rem;color:#888;border-top:1px solid #333;padding-top:14px;gap:10px;flex-wrap:wrap}

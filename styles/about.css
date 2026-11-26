@@ -1,0 +1,19 @@
+/* ===== about ===== */
+/* ===== values (about) ===== */
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;padding-block:8px 56px}
+.value{border:1px solid var(--line);padding:22px;min-height:200px;display:flex;flex-direction:column;justify-content:space-between}
+.value__num{font-size:.65rem;color:var(--mute)}
+.value__title{font-size:1.3rem;font-weight:800;margin-bottom:6px}
+.value__text{font-size:.8rem;color:var(--mute)}
+.reviews__slide{display:none}
+.reviews__slide--active{display:block}
+.reviews__nav{display:flex;align-items:center;gap:10px;margin-top:22px}
+.reviews__arrow{width:32px;height:32px;border:1px solid var(--ink);transition:.2s}
+.reviews__arrow:hover{background:var(--ink);color:#fff}
+.reviews__pos{font-size:.68rem;color:var(--mute)}
+.cta{background:var(--lime);padding-block:40px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.cta__title{font-size:clamp(1.6rem,3.4vw,2.4rem);font-weight:900}
+
+@media (max-width:900px){
+  .values{grid-template-columns:1fr}
+}
