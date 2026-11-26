@@ -1,0 +1,12 @@
+/* ===== edit ===== */
+/* ===== edit (pestañas) ===== */
+.edit{padding-block:16px 64px}
+.edit__tabs{display:flex;gap:8px;margin-bottom:28px;flex-wrap:wrap}
+.edit--tabs .edit__panel{display:none}
+.edit--tabs .edit__panel--active{display:block}
+.edit__banner{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:220px;padding:22px;color:#fff;margin-bottom:24px;scroll-margin-top:90px}
+.edit__banner--everyday{background:linear-gradient(180deg,#52606e,#23272d)}
+.edit__banner--run{background:linear-gradient(180deg,#2a2d33,#0f1012)}
+.edit__label{color:#ddd;font-size:.58rem}
+.edit__title{font-size:clamp(1.6rem,3.4vw,2.4rem);font-weight:800;margin:6px 0 8px}
+.edit__text{font-size:.8rem;color:#ccc;max-width:44ch}

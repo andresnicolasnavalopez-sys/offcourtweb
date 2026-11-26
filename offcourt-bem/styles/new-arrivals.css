@@ -1,0 +1,9 @@
+/* ===== new-arrivals ===== */
+/* ===== toolbar (filtros + orden) ===== */
+.products--page{padding-block:8px 64px}
+.note{display:none;align-items:center;gap:10px;font-size:.75rem;margin-bottom:14px}
+.note--show{display:flex}
+.note a{text-decoration:underline}
+.empty .btn{margin-top:16px}
+.toolbar__label{font-size:.65rem;color:var(--mute);margin-right:2px}
+.results{margin-bottom:14px}
